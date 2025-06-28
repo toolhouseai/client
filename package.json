@@ -1,0 +1,57 @@
+{
+  "name": "@toolhouseai/client",
+  "version": "1.0.0",
+  "description": "JavaScript client library for interacting with Toolhouse AI agents",
+  "main": "index.js",
+  "module": "index.js",
+  "exports": {
+    ".": {
+      "import": "./index.js",
+      "require": "./index.js"
+    }
+  },
+  "files": [
+    "index.js",
+    "toolhouse.test.js",
+    "README.md"
+  ],
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "test:ci": "jest --coverage --ci --watchAll=false",
+    "build": "echo \"Build script not configured\"",
+    "prepublishOnly": "npm run test:ci"
+  },
+  "keywords": [
+    "ai",
+    "agents",
+    "toolhouse",
+    "api",
+    "client",
+    "streaming",
+    "chat",
+    "assistant"
+  ],
+  "author": "Toolhouse",
+  "license": "MIT",
+  "homepage": "https://github.com/toolhouse/toolhouse-js#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/toolhouse/toolhouse-js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/toolhouse/toolhouse-js/issues"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.27.7",
+    "@babel/preset-env": "^7.27.2",
+    "@jest/globals": "^29.7.0",
+    "@types/node": "^18.0.0",
+    "babel-jest": "^29.7.0",
+    "jest": "^29.7.0"
+  }
+}
